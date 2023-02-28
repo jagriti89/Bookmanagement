@@ -1,10 +1,11 @@
 # Bookmanagement
 Project - Books Management
-Key points
+ Key points
+
 Create a group database groupXDatabase. You can clean the db you previously used and resue that.
 This time each group should have a single git branch. Coordinate amongst yourselves by ensuring every next person pulls the code last pushed by a team mate. You branch will be checked as part of the demo. Branch name should follow the naming convention project/booksManagementGroupX
 Follow the naming conventions exactly as instructed.
-##Models
+#Models
 User Model
 { 
   title: {string, mandatory, enum[Mr, Mrs, Miss]},
@@ -55,7 +56,7 @@ Allow an user to login with their email and password.
 On a successful login attempt return a JWT token contatining the userId, exp, iat. The response should be a JSON object like this
 If the credentials are incorrect return a suitable error message with a valid HTTP status code. The response should be a JSON object like this
 Books API
-##POST /books
+#POST /books
 Create a book document from request body. Get userId in request body only.
 Make sure the userId is a valid userId by checking the user exist in the users collection.
 Return HTTP status 201 on a succesful book creation. Also return the book document. The response should be a JSON object like this
